@@ -1,7 +1,6 @@
 module Main where
 
 import System.IO
-
 import Grammar
 import Parser
 import PrettyPrinter
