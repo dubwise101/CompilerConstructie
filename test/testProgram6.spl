@@ -1,0 +1,19 @@
+/* tuple en lijst */
+
+(a,b) tupple ((a,a) x ,[a] y)
+{
+	Int a =27;
+	Bool b = True;
+	while (b)
+	{
+		if(a > 0)
+		{
+			a= a-1;
+		}
+		else
+		{
+			b = False;
+		}
+	}
+	return (a,x.fst)
+}

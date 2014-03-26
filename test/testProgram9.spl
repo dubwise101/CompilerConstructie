@@ -1,0 +1,36 @@
+/* mix var decl en Fundecl met elkaar */
+
+Int test()
+{
+	Int a = 3;
+	Int b = 7;
+	b = a*6+b*5%23-12*12-1/4*8+2-1;
+	return b;
+}
+
+Int a = 3;
+Int b = 4;
+Bool c = False;
+(Int,Int) d = (3,3);
+(a,c) d = (3, True);
+[r] x = [];
+
+Void test2()
+{
+	a = 72;
+}
+
+Int MathTest (Int a, Int b)
+{
+ return a+b*a+b*a*a+b;
+}
+
+Void Main ()
+{
+	Int a = 2;
+	Int b = 3;
+	c = MathTest (a,b);
+	return multAdd (a,b,c);
+}
+
+Bool c = False;

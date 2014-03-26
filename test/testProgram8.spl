@@ -1,0 +1,13 @@
+/* Vardecl test */
+
+Int a = 3;
+Int b = 4;
+Bool c = False;
+(Int,Int) d = (3,3);
+(a,c) d = (3, True);
+[r] x = [];
+
+Void test()
+{
+	a = 72;
+}

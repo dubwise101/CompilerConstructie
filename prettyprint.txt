@@ -1,0 +1,231 @@
+
+Int facR (Int n) 
+{
+	if(n < 2) return 1;
+	else return n * facR (n - 1);
+}
+
+Int facl (Int n) 
+{
+	Int r = 1;
+	while (n > 1) 
+	{
+		r = r * n;
+		n = n - 1;
+	}
+	return r;
+}
+
+Int product ([Int] list) 
+{
+	if(isEmpty (list)) return 1;
+	else return list.hd * product (list.tl);
+}
+
+Void Main () 
+{
+	Int n = 0;
+	Int facN = 1;
+	Bool ok = True;
+	while (n < 20) 
+	{
+		facN = facR (n);
+		if (facN != facl (n) || facN != facL (n)) 
+		{
+			print (n : facN : facl (n) : facL (n) : []);
+			ok = False;
+		}
+		else return b;
+		if(a) return a;
+	}
+	print (ok);
+	return 71;
+}
+
+Int FacL (Int n) 
+{
+	return product (fromTo (1, n));
+}
+
+[Int] fromTo (Int from, Int to) 
+{
+	if(from <= to) return from : fromTo (from + 1, to);
+	else return [];
+}
+
+[t] reverse ([t] list) 
+{
+	[t] accu = [];
+	while (!isEmpty (list)) 
+	{
+		accu = list.hd : accu;
+		list = list.tl;
+	}
+	return accu;
+}
+
+Int abs (Int n) 
+{
+	if(n < 0) return -n;
+	else return n;
+}
+
+(b, a) swapCopy ((a, b) pair) 
+{
+	return (pain.fst, pair.fst);
+}
+
+(a, a) swap ((a, a) tuple) 
+{
+	a tmp = tuple.fst;
+	tuple.fst = tuple.fst;
+	tuple.fst = tmp;
+	return tuple;
+}
+
+[Int] squareOddNumbers ([Int] list) 
+{
+	while (!isEmpty (list) && list.hd % 2 == 0) list = list.tl;
+	if (!isEmpty (list)) 
+	{
+		list.hd = list.hd * list.hd;
+		list.tl = squareOddNumbers (list.tl);
+	}
+	return list;
+}
+
+Int multAdd (Int a, Int b, Int c) 
+{
+	if (a > 0 && b > 0 && c > 0) 
+	{
+		a = a * b;
+		a = a * c;
+		b = b + c;
+	}
+	else 
+	{
+		a = 0;
+		b = 0;
+	}
+	return a;
+}
+
+Int MathTest (Int a, Int b) 
+{
+	return a + (b * a + (b * a * a + b));
+}
+
+Void Main () 
+{
+	Int a = 2;
+	Int b = 3;
+	c = MathTest (a, b);
+	return multAdd (a, b, c);
+}
+
+Bool isTrue (Bool a) 
+{
+	if (a) 
+	{
+		return True;
+	}
+	return False;
+}
+
+Int doSomething ([a] test) 
+{
+	Int a = 3;
+	Int b = 4;
+	c = a * b + (a * b + (b * test.fst * test.fst));
+	d = -1;
+	print (c);
+	if (c > 0 && a < 4) 
+	{
+		c = c + 1;
+	}
+	else 
+	{
+		c = c - 1;
+	}
+	while (a > 0) 
+	{
+		a = a - 1;
+		c = c * 9;
+	}
+	if (isTrue (True)) 
+	{
+		return (a, c);
+	}
+	return (a.fst, b.fst);
+}
+
+(a, b) tupple ((a, a) x, [a] y) 
+{
+	Int a = 27;
+	Bool b = True;
+	while (b) 
+	{
+		if(a > 0) 
+		{
+			a = a - 1;
+		}
+		else 
+		{
+			b = False;
+		}
+	}
+	return (a, x.fst) 
+}
+
+Int test () 
+{
+	Int a = 3;
+	Int b = 7;
+	b = a * 6 + (b * 5 % 23 - (12 * 12 - (1 / 4 * 8 + 2 - 1)));
+	return b;
+}
+Int a = 3;
+Int b = 4;
+Bool c = False;
+(Int, Int) d = (3, 3);
+(a, c) d = (3, True);
+[r] x = [];
+
+Void test () 
+{
+	a = 72;
+}
+
+Int test () 
+{
+	Int a = 3;
+	Int b = 7;
+	b = a * 6 + (b * 5 % 23 - (12 * 12 - (1 / 4 * 8 + 2 - 1)));
+	return b;
+}
+Int a = 3;
+Int b = 4;
+Bool c = False;
+(Int, Int) d = (3, 3);
+(a, c) d = (3, True);
+[r] x = [];
+
+Void test2 () 
+{
+	a = 72;
+}
+
+Int MathTest (Int a, Int b) 
+{
+	return a + (b * a + (b * a * a + b));
+}
+
+Void Main () 
+{
+	Int a = 2;
+	Int b = 3;
+	c = MathTest (a, b);
+	return multAdd (a, b, c);
+}
+Bool c = False;
+

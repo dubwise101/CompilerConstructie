@@ -1,0 +1,6067 @@
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+/* speedtest */
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}
+Int doSomething([a] test)
+{
+	Int a = 3;
+	Int b = 4;
+	c = a*b+a*b+b*test.fst*test.snd;
+	d = -1;
+	print (c);
+	if(c > 0 && a < 4)
+	{
+		c = c+1;
+	}
+	else
+	{
+		c = c-1;
+	}
+	while (a>0)
+	{
+		a= a-1;
+		c = c *9;
+	}	
+	
+	if (isTrue (True))
+	{
+		return (a,c);
+	}	
+	return (a.fst,b.snd);
+}

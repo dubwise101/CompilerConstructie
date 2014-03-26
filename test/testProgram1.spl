@@ -1,0 +1,91 @@
+Int facR ( Int n )
+{ if ( n < 2 ) return 1;
+else return n * facR ( n - 1 );
+}
+
+Int facl (Int n)
+{
+	Int r =1;
+	while (n > 1)
+	{
+		r = r*n;
+		n = n -1;
+	}
+	return r;
+}
+
+Int product ([Int] list)
+{
+	if ( isEmpty (list)) return 1;
+	else return list.hd * product (list.tl);
+}	
+
+Void Main ()
+{
+	Int n = 0;
+	Int facN =1;
+	Bool ok = True;
+	while (n < 20)
+	{
+	 facN = facR (n);
+	 if ( facN != facl (n) || facN != facL (n))
+	 {
+	   print (n : facN : facl (n) : facL (n) : []);
+	   ok = False;
+	 }
+	 else return b;
+	 if(a) return a;
+	}
+	print (ok);
+	return 71;
+}
+
+Int FacL (Int n)
+{
+ return product (fromTo ( 1, n ));
+}
+
+[Int] fromTo (Int from, Int to)
+{
+	if (from <= to) return from : fromTo (from + 1, to);
+	else return [];
+}
+
+
+[t] reverse ([t] list)
+{
+	[t] accu = [];
+	while (! isEmpty (list))
+	{
+		accu = list.hd : accu;
+		list = list.tl;
+	}
+	return accu;
+}
+
+Int abs (Int n) {if (n < 0 ) return -n; else return n;}
+
+(b,a) swapCopy ((a,b) pair)
+{
+	return (pain.snd, pair.fst);
+}
+
+(a,a) swap ((a,a) tuple)
+{
+	a tmp = tuple.fst;
+	tuple.fst = tuple.snd;
+	tuple.snd = tmp;
+	return tuple;
+}
+
+[Int] squareOddNumbers ([Int] list)
+{
+	while (! isEmpty (list) && list.hd % 2 == 0)
+	list = list.tl;
+	if(! isEmpty (list))
+	{
+		list.hd = list.hd * list.hd;
+		list.tl = squareOddNumbers (list.tl);
+	}
+	return list;
+}

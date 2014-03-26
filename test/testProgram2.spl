@@ -1,0 +1,29 @@
+Int multAdd (Int a, Int b, Int c)
+{
+	if (a>0 && b > 0 && c>0)
+	{
+		a = a*b;
+		a = a*c;
+		b = b+c;
+	}
+	else
+	{
+	   a = 0;
+	   b = 0;
+	}
+	
+	return a;
+}
+
+Int MathTest (Int a, Int b)
+{
+ return a+b*a+b*a*a+b;
+}
+
+Void Main ()
+{
+	Int a = 2;
+	Int b = 3;
+	c = MathTest (a,b);
+	return multAdd (a,b,c);
+}
