@@ -1,10 +1,10 @@
 module Main where
 
-import System.IO
-
 import Grammar
 import Parser
 import PrettyPrinter
+
+import System.IO
 
 openFile :: String -> IO ()
 openFile fileName = do

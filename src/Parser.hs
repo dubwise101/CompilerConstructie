@@ -1,248 +1,245 @@
 module Parser where
-
-import Grammar
-
 import Data.Char
-
+import Grammar
 
 tupleToTree :: (Tree a, String) -> Tree a
 tupleToTree (tree, _) = tree
 
 noError :: (Tree a, String) -> Bool
-noError (Node (TokError _) _,_)         = False
+noError (Branch (TokError _) _,_)       = False
 noError _                               = True
 
 dropChar :: (Tree a, String) -> Int -> (Tree a, String)
 dropChar (tree, input) a
-        | length (deleteSpace input) < a        = (Node (TokError "Cannot remove this many chars at:") [], [])
-        | otherwise                             = (tree, drop a (deleteSpace input))
+        | length (ds input) < a    = (Branch (TokError "cannot remove this many chars at:") [], [])
+        | otherwise             = (tree, drop a (ds input))
 
 insertTup :: (Tree a, String) -> (Tree a, String) -> (Tree a, String)
-insertTup (Node _ _, _) (Node (TokError y) b, s2)       = (Node (TokError y) b, s2)
-insertTup (Node x [], _) (Node y a, s2)                 = (Node x [Node y a], s2)
-insertTup (Node x a, _) (Node y [], s2)                 = (Node x (a ++ [Node y []]), s2)
-insertTup (Node x a, _) (Node y b, s2)                  = (Node x (a ++ [Node y b]), s2)
+insertTup (Branch _ _, _) (Branch (TokError y) b, s2)     = (Branch (TokError y) b, s2)
+insertTup (Branch x [], _) (Branch y a, s2)                      = (Branch x [Branch y a], s2)
+insertTup (Branch x a, _) (Branch y [], s2)                      = (Branch x (a ++ [Branch y []]), s2)
+insertTup (Branch x a, _) (Branch y b, s2)                       = (Branch x (a ++ [Branch y b]), s2)
 
 insertNode :: Tree a -> Tree a -> Tree a
-insertNode (Node x []) (Node y a)       = Node x [Node y a]
-insertNode (Node x a) (Node y [])       = Node x (a ++ [Node y []])
-insertNode (Node x a) (Node y b)        = Node x (a ++ [Node y b])
+insertNode (Branch x []) (Branch y a)   = Branch x [Branch y a]
+insertNode (Branch x a) (Branch y [])   = Branch x (a ++ [Branch y []])
+insertNode (Branch x a) (Branch y b)    = Branch x (a ++ [Branch y b])
 
 isSPL :: String -> Tree a
-isSPL []        = Node (TokError "empty input file") []
-isSPL input     = getDecl (isDecl (Node TokSPL [], input))
+isSPL [] = Branch (TokError "empty input file") []
+isSPL input = getDecl (isDecl (Branch TokSPL [], input))
         where
         getDecl l@(t,s)
-                | noError l &&  not (null  (deleteSpace s))     = insertNode t (isSPL (deleteSpace s))
-                | otherwise                                     = tupleToTree (isDecl (Node TokSPL [], input))
+                | noError l &&  not (null  (ds s))      = insertNode t (isSPL (ds s))
+                | otherwise                             = tupleToTree (isDecl (Branch TokSPL [], input))
 
 isDecl :: (Tree a, String) -> (Tree a, String)
-isDecl (_, []) = (Node (TokError "No declaration found") [], [])
+isDecl (_, []) = (Branch (TokError "No decleration found") [], [])
 isDecl l@(tree, input)
-        | noError (isVarDecl l)     = insertTup l (isVarDecl (Node TokDecl [], deleteSpace input))
-        | noError (isFunDecl l)     = insertTup l (isFunDecl (Node TokDecl [], deleteSpace input))
+        | noError (isVarDecl l)     = insertTup l (isVarDecl (Branch TokDecl [], ds input))
+        | noError (isFunDecl l)     = insertTup l (isFunDecl (Branch TokDecl [], ds input))
         | otherwise                 = isVarDecl l
 
 isVarDecl:: (Tree a, String) -> (Tree a, String)
-isVarDecl (_, [])       = (Node (TokError "Empty input variable") [], [])
-isVarDecl l@(_, input)  = insertTup l (hasId $ findSpace (isType (Node TokVarDecl [], deleteSpace input)))
+isVarDecl (_, [])       = (Branch (TokError "empty input Variable") [], [])
+isVarDecl l@(_, input)      = insertTup l (hasId $ fs (isType (Branch TokVarDecl [], ds input)))
         where
         hasId t
-                | noError t = hasEqSign $ findSpace (isId t)
+                | noError t = hasEqSign $ fs (isId t)
                 | otherwise = t
                 where
                 hasEqSign l@(_, s)
-                        | noError l && not (null s) && head s == '='    = insertTup l (hasExp $ findSpace (isExp $ findSpace (dropChar (Node (TokText "=") [],s) 1)))
-                        | noError l                                     = (Node (TokError (" = sign missing in varDecl at: "++ s)) [], s)
-                        | otherwise                                     = l
+                        | noError l && not (null s) && head s == '=' = insertTup l (hasExp $ fs (isExp $ fs (dropChar (Branch (TokText "=") [],s) 1)))
+                        | noError l = (Branch (TokError (" = sign missing in varDecl at: "++ s)) [], s)
+                        | otherwise = l
                         where
                         hasExp l@(_, s)
-                                | noError l && not (null s) && head s == ';'    = insertTup l (dropChar (Node (TokText ";") [],s) 1)
-                                | noError l                                     = (Node (TokError (" ; sign missing in varDecl at: "++ s)) [], s)
-                                | otherwise                                     = l
+                                | noError l && not (null s) && head s == ';' = insertTup l (dropChar (Branch (TokText ";") [],s) 1)
+                                | noError l = (Branch (TokError (" ; sign missing in varDecl at: "++ s)) [], s)
+                                | otherwise = l
 
 isFunDecl:: (Tree a, String) -> (Tree a, String)
-isFunDecl (_, [])       = (Node (TokError "FunDecl missing") [], [])
-isFunDecl l@(_,input)   = insertTup l (hasId $ findSpace (isRetType (Node TokFunDecl [], deleteSpace input)))
+isFunDecl (_, []) = (Branch (TokError "functiondecl missing") [], [])
+isFunDecl l@(_,input) = insertTup l (hasId $ fs (isRetType (Branch TokFunDecl [], ds input)))
         where
         hasId t
-                | noError t = hasParen $ findSpace (isId $ findSpace t)
+                | noError t = hasParen $ fs (isId $ fs t)
                 | otherwise = t
                 where
                 hasParen l@(_,input)
-                        | not (null input) && head input == '(' = insertTup l (hasFunargs $ findSpace (dropChar (Node (TokParen ParenceO) [], input) 1))
-                        | otherwise                             = (Node (TokError (" ( sign missing in funDecl at: "++ input)) [], input)
+                        | not (null input) && head input == '(' = insertTup l (hasFunargs $ fs (dropChar (Branch (TokParen ParenceO) [], input) 1))
+                        | otherwise = (Branch (TokError (" ( sign missing in funDecl at: "++ input)) [], input)
                         where
                         hasFunargs l@ (_,input)
-                                | noError (isFunarg $ findSpace l)                                      = hasFunargs $ findSpace (isFunarg $ findSpace l)
-                                | not (null (deleteSpace input)) && head (deleteSpace input) == ')'     = insertTup l (hasMult (findSpace (Node (TokParen ParenceC) [], input)))
+                                | noError (isFunarg $ fs l)                     = hasFunargs $ fs (isFunarg $ fs l)
+                                | not (null (ds input)) && head (ds input) == ')'       = insertTup l (hasMult (fs (Branch (TokParen ParenceC) [], input)))
                                 where
                                 hasMult l@(t,input)
-                                        | head (deleteSpace(tail (deleteSpace input))) == '{'   = insertTup l (hasVardecl (findSpace(Node (TokCurl CurlO) [],tail(deleteSpace(tail (deleteSpace input))))))
-                                        | otherwise                                             = (Node (TokError ("Wrong FunArg or missing ) or { sign, at:" ++ input)) [], input)
+                                        | head (ds(tail (ds input))) == '{' = insertTup l (hasVardecl (fs(Branch (TokCurl CurlO) [],tail(ds(tail (ds input))))))
+                                        | otherwise                     = (Branch (TokError ("wrong funarg or missing ) Or { token, at:" ++ input)) [], input)
                                        where
                                        hasVardecl l
-                                                | noError(isVarDecl (findSpace l))      = hasVardecl $ findSpace (isVarDecl (findSpace l))
-                                                | otherwise                             = hasStatement $ findSpace (isStatement (findSpace l))
+                                                | noError(isVarDecl (fs l))     = hasVardecl $ fs (isVarDecl (fs l))
+                                                | otherwise                     = hasStatement $ fs (isStatement (fs l))
                                                 where
                                                 hasStatement l@(_,input)
-                                                    | noError l && noError (isStatement (findSpace l))  = hasStatement (isStatement (findSpace l))
-                                                    | noError l && head (deleteSpace input) == '}'      = insertTup l (dropChar (Node (TokCurl CurlC) [], input) 1)
-                                                    | otherwise                                         = l
+                                                    | noError l && noError (isStatement (fs l)) = hasStatement (isStatement (fs l))
+                                                    | noError l && head (ds input) == '}'       = insertTup l (dropChar (Branch (TokCurl CurlC) [], input) 1)
+                                                    | otherwise                                 = l
 
 isFunarg :: (Tree a, String) -> (Tree a, String)
-isFunarg (_, [])        = (Node (TokError "Function argument missing") [], [])
-isFunarg l@(_, input)   = insertTup l (hasType (isType (Node TokFArgs [], deleteSpace input)))
+isFunarg (_, [])        = (Branch (TokError "function argument missing") [], [])
+isFunarg l@(_, input)       = insertTup l (hasType (isType (Branch TokFArgs [], ds input)))
             where
             hasType l@(_, input)
-                | noError l     = hasId $ findSpace (isId (findSpace l))
-                | otherwise     = (Node (TokError ("No match in FunArg at:" ++ input)) [], [])
+                | noError l     = hasId $ fs (isId (fs l))
+                | otherwise     = (Branch (TokError ("no match in funarg at:" ++ input)) [], [])
                 where
-                hasId (_, []) = (Node (TokError "No id found in FunArg") [], [])
+                hasId (_, []) = (Branch (TokError "no id found in funarg") [], [])
                 hasId l@(_, input)
-                        | noError l && not (null (deleteSpace input)) && head (deleteSpace input) == ','        = insertTup l (isFunarg $ findSpace (dropChar (Node (TokText ",") [], deleteSpace input) 1))
-                        | otherwise                                                                             = l
+                        | noError l && not (null (ds input)) && head (ds input) == ','  = insertTup l (isFunarg $ fs (dropChar (Branch (TokText ",") [], ds input) 1))
+                        | otherwise                                                     = l
 
 isStatement :: (Tree a, String) -> (Tree a, String)
-isStatement (_, []) = (Node (TokError "Empty input in a statement") [], [])
+isStatement (_, []) = (Branch (TokError "empty input in a statement") [], [])
 isStatement l@(x,xs)
-        | head (deleteSpace xs) == '{'                                                                  = insertTup l (multiStatement $ findSpace (Node (TokStmt MultState) [Node (TokCurl CurlO) []], tail (deleteSpace xs)))
-        | take 2 (deleteSpace xs) == "if" && head (deleteSpace (drop 2 (deleteSpace xs))) == '('        = insertTup l (hasExp $ findSpace (isExp (Node (TokStmt IfState) [Node (TokParen ParenceO) []], drop 1 (deleteSpace (drop 2 (deleteSpace xs))))))
-        | take 5 (deleteSpace xs) == "while" && head (deleteSpace (drop 5 (deleteSpace xs))) == '('     = insertTup l (hasExp $ findSpace (isExp (Node (TokStmt WhileState) [Node (TokParen ParenceO) []], tail (deleteSpace (drop 5 (deleteSpace xs))))))
-        | noError(isFunCall (x,xs))                                                                     = insertTup l (hasFuncall (isFunCall (Node (TokStmt FuncSate) [], deleteSpace xs)))
-        | take 6 (deleteSpace xs) == "return"                                                           = insertTup l (maybeExp $ findSpace (Node (TokStmt Return) [], deleteSpace (drop 6 (deleteSpace xs))))
-        | noError(isId (findSpace l))                                                                   = insertTup l (hasId $ findSpace (isId (Node (TokStmt EqState) [], deleteSpace xs)))
-        | otherwise                                                                                     = (Node (TokError ("no matching statement at:" ++ deleteSpace xs)) [], xs)
+        | head (ds xs) == '{'                                                   = insertTup l (multiStatement $ fs (Branch (TokStmt MultState) [Branch (TokCurl CurlO) []], tail (ds xs)))
+        | take 2 (ds xs) == "if" && head (ds (drop 2 (ds xs))) == '('           = insertTup l (hasExp $ fs (isExp (Branch (TokStmt IfState) [Branch (TokParen ParenceO) []], drop 1 (ds (drop 2 (ds xs))))))
+        | take 5 (ds xs) == "while" && head (ds (drop 5 (ds xs))) == '('        = insertTup l (hasExp $ fs (isExp (Branch (TokStmt WhileState) [Branch (TokParen ParenceO) []], tail (ds (drop 5 (ds xs))))))
+        | noError(isFunCall (x,xs))                                             = insertTup l (hasFuncall (isFunCall (Branch (TokStmt FuncSate) [], ds xs)))
+        | take 6 (ds xs) == "return"                                            = insertTup l (maybeExp $ fs (Branch (TokStmt Return) [], ds (drop 6 (ds xs))))
+        | noError(isId (fs l))                                                  = insertTup l (hasId $ fs (isId (Branch (TokStmt EqState) [], ds xs)))
+        | otherwise                                                             = (Branch (TokError ("no matching statement at:" ++ ds xs)) [], xs)
         where
-         multiStatement (_, []) = (Node (TokError "Empty input in multi statement") [], [])
+         multiStatement (_, []) = (Branch (TokError "empty input in multi statement") [], [])
          multiStatement l@(x,xs)
-                | noError (isStatement (x, deleteSpace xs))                     = multiStatement (isStatement (x, deleteSpace xs))
-                | not (null (deleteSpace xs)) && head (deleteSpace xs) == '}'   = insertTup l (Node (TokCurl CurlC) [], tail (deleteSpace xs))
-                | otherwise                                                     = isStatement (x, deleteSpace xs)
-         hasExp (_, []) = (Node (TokError "Error in exp for statement") [], [])
+                | noError (isStatement (x, ds xs))              = multiStatement (isStatement (x, ds xs))
+                | not (null (ds xs)) && head (ds xs) == '}'     = insertTup l (Branch (TokCurl CurlC) [], tail (ds xs))
+                | otherwise                                     = isStatement (x, ds xs)
+         hasExp (_, []) = (Branch (TokError "error in exp for statement") [], [])
          hasExp l@(_, xs)
                 | noError l
-                && not (null (deleteSpace xs))
-                && head (deleteSpace xs) == ')' = insertTup l (hasStatement $ findSpace (Node (TokParen ParenceC) [], deleteSpace(tail (deleteSpace xs))))
-                | noError l                     =  (Node (TokError ("Missing ) at:"++ xs)) [], [])
-                | otherwise                     = l
+                && not (null (ds xs))
+                && head (ds xs) == ')'  = insertTup l (hasStatement $ fs (Branch (TokParen ParenceC) [], ds(tail (ds xs))))
+                | noError l             =  (Branch (TokError ("missing ) at:"++ xs)) [], [])
+                | otherwise             =  l
                 where
-                hasStatement (_, []) = (Node (TokError "Empty input for state for statement") [], [])
+                hasStatement (_, []) = (Branch (TokError "empty input for state for statement") [], [])
                 hasStatement (x, xs)
-                        | noError(isStatement (x, deleteSpace xs))      = hasElse $ findSpace (isStatement (x, deleteSpace xs))
-                        | otherwise                                     = isStatement (x, deleteSpace xs)
+                        | noError(isStatement (x, ds xs))       = hasElse $ fs (isStatement (x, ds xs))
+                        | otherwise                             = isStatement (x, ds xs)
                         where
                         hasElse (x, [])  = (x, [])
                         hasElse l@(x,xs)
-                                | take 4 (deleteSpace xs) == "else"     = insertTup l (hasStatement (Node (TokStmt ElseState) [], drop 4 (deleteSpace xs)))
-                                | otherwise                             = (x,xs)
+                                | take 4 (ds xs) == "else"      = insertTup l (hasStatement (Branch (TokStmt ElseState) [], drop 4 (ds xs)))
+                                | otherwise                     = (x,xs)
          hasId t
-                | noError t = hasField $findSpace (isField (findSpace t))
+                | noError t = hasField $fs (isField (fs t))
                 | otherwise = t
                 where
                 hasField l@(_, xs)
-                        | noError l && not (null (deleteSpace xs)) && head  (deleteSpace xs) == '='     = insertTup l (hasIdExp $ findSpace (isExp (dropChar (Node (TokText "=")[],xs) 1)))
-                        | noError l                                                                     = (Node (TokError ("= missing in statement at:"++xs)) [], [])
-                        | otherwise                                                                     = l
+                        | noError l && not (null (ds xs)) && head  (ds xs) == '='       = insertTup l (hasIdExp $ fs (isExp (dropChar (Branch (TokText "=")[],xs) 1)))
+                        | noError l                                                     = (Branch (TokError ("= missing in statement at:"++xs)) [], [])
+                        | otherwise                                                     = l
                         where
                         hasIdExp l@(_,xs)
-                                | noError l && not (null (deleteSpace xs)) && head  (deleteSpace xs) == ';'     = insertTup l (dropChar (Node (TokText ";")[],xs) 1)
-                                | noError l                                                                     = (Node (TokError ("; missing in statement at:"++xs)) [], [])
-                                | otherwise                                                                     = l
+                                | noError l && not (null (ds xs)) && head  (ds xs) == ';'       = insertTup l (dropChar (Branch (TokText ";")[],xs) 1)
+                                | noError l                                                     = (Branch (TokError ("; missing in statement at:"++xs)) [], [])
+                                | otherwise                                                     = l
          hasFuncall l@(_,xs)
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ';'      = insertTup l (dropChar (Node (TokText ";") [], deleteSpace xs) 1)
-                | otherwise                                                                     = l
+                | noError l && not (null (ds xs)) && head (ds xs) == ';'        = insertTup l (dropChar (Branch (TokText ";") [], ds xs) 1)
+                | otherwise                                                     = l
          maybeExp l@(_, xs)
-                | noError (isExp (findSpace l))                                 = maybeExp (isExp (findSpace l))
-                | not (null (deleteSpace xs)) && head (deleteSpace xs) == ';'   = insertTup l (dropChar (Node (TokText ";") [], deleteSpace xs) 1)
-                | otherwise                                                     = (Node (TokError ("; missing from return at:"++xs)) [], [])
+                | noError (isExp (fs l))                        = maybeExp (isExp (fs l))
+                | not (null (ds xs)) && head (ds xs) == ';'     = insertTup l (dropChar (Branch (TokText ";") [], ds xs) 1)
+                | otherwise                                     = (Branch (TokError ("; missing from return at:"++xs)) [], [])
 
 isRetType :: (Tree a, String) -> (Tree a, String)
-isRetType (_, [])        = (Node (TokError "Data missing for RetType") [], [])
+isRetType (_, [])        = (Branch (TokError "data missing for Return type") [], [])
 isRetType l@(x,xs)
-        | take 4 (deleteSpace xs) == "Void"     = insertTup l (Node (TokRetType Void) [], drop 4 (deleteSpace xs))
-        | noError(isType (x, deleteSpace xs))   = insertTup l $ findSpace (isType (Node (TokRetType RType) [], deleteSpace xs))
-        | otherwise                             = isType (x, deleteSpace xs)
+        | take 4 (ds xs) == "Void"      = insertTup l (Branch (TokRetType Void) [], drop 4 (ds xs))
+        | noError(isType (x, ds xs))    = insertTup l $ fs (isType (Branch (TokRetType RType) [], ds xs))
+        | otherwise                     = isType (x, ds xs)
 
 isType :: (Tree a, String) -> (Tree a, String)
-isType (_, []) = (Node (TokError "Empty input Type") [], [])
+isType (_, []) = (Branch (TokError "empty input type") [], [])
 isType l@(x,xs)
-        | head (deleteSpace xs) == '['          = insertTup l (hasTypeList $ findSpace (isType (Node (TokBrack BrackO) [], deleteSpace (tail (deleteSpace xs)))))
-        | head (deleteSpace xs) == '('          = insertTup l (hasTypeTup $ findSpace (isType (dropChar (Node (TokParen ParenceO) [], deleteSpace xs) 1)) )
-        | take 3 (deleteSpace xs) == "Int"      = insertTup l (Node (TokType Int) [], deleteSpace (drop 3 (deleteSpace xs)))
-        | take 4 (deleteSpace xs) == "Bool"     = insertTup l (Node (TokType Bool) [], deleteSpace (drop 4 (deleteSpace xs)))
-        | noError(isId (x, deleteSpace xs))     = insertTup l (isId (Node (TokType Id) [], deleteSpace xs))
-        | otherwise                             = (Node (TokError ("No input type found at: " ++ xs)) [], [])
+        | head (ds xs) == '['           = insertTup l (hasTypeList $ fs (isType (Branch (TokBrack BrackO) [], ds (tail (ds xs)))))
+        | head (ds xs) == '('           = insertTup l (hasTypeTup $ fs (isType (dropChar (Branch (TokParen ParenceO) [], ds xs) 1)) )
+        | take 3 (ds xs) == "Int"       = insertTup l (Branch (TokType Int) [], ds (drop 3 (ds xs)))
+        | take 4 (ds xs) == "Bool"      = insertTup l (Branch (TokType Bool) [], ds (drop 4 (ds xs)))
+        | noError(isId (x, ds xs))      = insertTup l (isId (Branch (TokType Id) [], ds xs))
+        | otherwise                     = (Branch (TokError ("no input type found at: " ++ xs)) [], [])
         where
         hasTypeList l@(_, xs)
-               | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ']'       = insertTup l (dropChar (Node (TokBrack BrackC) [], deleteSpace xs) 1)
-               | noError l                                                                      = (Node (TokError ("] missing in for type at:"++xs)) [],xs)
-               | otherwise                                                                      = l
+               | noError l && not (null (ds xs)) && head (ds xs) == ']' = insertTup l (dropChar (Branch (TokBrack BrackC) [], ds xs) 1)
+               | noError l                                              = (Branch (TokError ("] missing in for type at:"++xs)) [],xs)
+               | otherwise                                              = l
         hasTypeTup l@(_, xs)
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ','      = insertTup l (hasSecondType $ findSpace (isType $ findSpace (dropChar (Node (TokText ",") [], xs ) 1)))
-                | noError l                                                                     = (Node (TokError (",-token missing in for typeTupel at:"++xs)) [],xs)
-                | otherwise                                                                     = l
+                | noError l && not (null (ds xs)) && head (ds xs) == ','        = insertTup l (hasSecondType $ fs (isType $ fs (dropChar (Branch (TokText ",") [], xs ) 1)))
+                | noError l                                                     = (Branch (TokError (",-token missing in for typeTupel at:"++xs)) [],xs)
+                | otherwise                                                     = l
                 where
                 hasSecondType l@(_, xs)
-                        | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ')'      = insertTup l (dropChar (Node (TokParen ParenceC) [], xs ) 1)
-                        | noError l                                                                     = (Node (TokError (")-token missing in for typeTupel at (max two types in each tuple):"++xs)) [],xs)
-                        | otherwise                                                                     = l
+                        | noError l && not (null (ds xs)) && head (ds xs) == ')'        = insertTup l (dropChar (Branch (TokParen ParenceC) [], xs ) 1)
+                        | noError l                                                     = (Branch (TokError (")-token missing in for typeTupel at (max two types in each tuple):"++xs)) [],xs)
+                        | otherwise                                                     = l
 
 isTrue :: (Tree a, String) -> (Tree a, String)
-isTrue (_, []) = (Node (TokError "Empty input true") [], [])
+isTrue (_, []) = (Branch (TokError "empty input true") [], [])
 isTrue l@(_, xs)
-        | take 4 (deleteSpace xs) == "True"     = insertTup l (Node (TokBool True) [], drop 4 (deleteSpace xs))
-        | otherwise                             = (Node (TokError "No match on True") [], [])
+        | take 4 (ds xs) == "True"      = insertTup l (Branch (TokBool True) [], drop 4 (ds xs))
+        | otherwise                     = (Branch (TokError "no match on true") [], [])
 
 isFalse :: (Tree a, String) -> (Tree a, String)
-isFalse (_, []) = (Node (TokError "Empty input False") [], [])
+isFalse (_, []) = (Branch (TokError "empty input False") [], [])
 isFalse l@(_, xs)
-        | take 5 (deleteSpace xs) == "False"    = insertTup l (Node (TokBool False) [], drop 5 (deleteSpace xs))
-        | otherwise                             = (Node (TokError "No match on False") [], [])
+        | take 5 (ds xs) == "False"     = insertTup l (Branch (TokBool False) [], drop 5 (ds xs))
+        | otherwise                     = (Branch (TokError "no match on false") [], [])
 
 isExp :: (Tree a, String) -> (Tree a, String)
-isExp (_, []) = (Node (TokError "Expression missing") [], [])
+isExp (_, []) = (Branch (TokError "expression missing") [], [])
 isExp l@(x,xs)
-        | noError (isOp1 (x, deleteSpace xs))                           = insertTup l (hasExp $ findSpace (isExp $ findSpace (isOp1 (Node TokExp [], deleteSpace xs))))
-        | noError (isInt (x, deleteSpace xs))                           = insertTup l (hasExp $ findSpace (isInt (Node TokExp [], deleteSpace xs)))
-        | noError (isTrue (x, deleteSpace xs))                          = insertTup l (hasExp $ findSpace (isTrue (Node TokExp [], deleteSpace xs)))
-        | noError (isFalse (x, deleteSpace xs))                         = insertTup l (hasExp $ findSpace (isFalse (Node TokExp [], deleteSpace xs)))
-        | not (null (deleteSpace xs)) &&  head (deleteSpace xs) == '('  = insertTup l (hasTuple $ findSpace (isExp $ findSpace (dropChar (Node (TokParen ParenceO) [], deleteSpace xs) 1)))
-        | take 2 (deleteSpace xs) == "[]"                               = insertTup l (hasExp $ findSpace (Node TokExp [Node (TokType EmptyList) []], drop 2 (deleteSpace xs)))
-        | noError (isFunCall (Node TokExp [], deleteSpace xs))          = insertTup l (hasExp $ findSpace (isFunCall (Node TokExp [], deleteSpace xs)))
-        | noError (isId (x, deleteSpace xs))                            = insertTup l (hasExp $ findSpace (isField $ findSpace (isId (Node TokExp [], deleteSpace xs)) ))
-        | otherwise                                                     = (Node (TokError ("No matching exp found at:" ++ xs)) [], xs)
+        | noError (isOp1 (x, ds xs))                            = insertTup l (hasExp $ fs (isExp $ fs (isOp1 (Branch TokExp [], ds xs))))
+        | noError (isInt (x, ds xs))                            = insertTup l (hasExp $ fs (isInt (Branch TokExp [], ds xs)))
+        | noError (isTrue (x, ds xs))                           = insertTup l (hasExp $ fs (isTrue (Branch TokExp [], ds xs)))
+        | noError (isFalse (x, ds xs))                          = insertTup l (hasExp $ fs (isFalse (Branch TokExp [], ds xs)))
+        | not (null (ds xs)) &&  head (ds xs) == '('            = insertTup l (hasTuple $ fs (isExp $ fs (dropChar (Branch (TokParen ParenceO) [], ds xs) 1)))
+        | take 2 (ds xs) == "[]"                                = insertTup l (hasExp $ fs (Branch TokExp [Branch (TokType EmptyList) []], drop 2 (ds xs)))
+        | noError (isFunCall (Branch TokExp [], ds xs))         = insertTup l (hasExp $ fs (isFunCall (Branch TokExp [], ds xs)))
+        | noError (isId (x, ds xs))                             = insertTup l (hasExp $ fs (isField $ fs (isId (Branch TokExp [], ds xs)) ))
+        | otherwise                                             = (Branch (TokError ("no matching exp found at:" ++ xs)) [], xs)
         where
         hasTuple l@(_, xs)
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ')'      = insertTup l (hasExp (Node (TokParen ParenceC) [], drop 1 (deleteSpace xs)))
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ','      = insertTup l (hasTuple $ findSpace (isExp $ findSpace(Node (TokText ",") [], drop 1 (deleteSpace xs))))
-                | noError l                                                                     = (Node (TokError (")-token missing at:"++xs)) [], xs)
-                | otherwise                                                                     = l
+                | noError l && not (null (ds xs)) && head (ds xs) == ')'        = insertTup l (hasExp (Branch (TokParen ParenceC) [], drop 1 (ds xs)))
+                | noError l && not (null (ds xs)) && head (ds xs) == ','        = insertTup l (hasTuple $ fs (isExp $ fs(Branch (TokText ",") [], drop 1 (ds xs))))
+                | noError l                                                     = (Branch (TokError (")-token missing at:"++xs)) [], xs)
+                | otherwise                                                     = l
         hasExp l@(_, xs)
-                | noError l && noError (isOp2 $ findSpace l)    = fixOrder (isExp $ findSpace (isOp2 $ findSpace l)) --fixOrder
-                | noError l                                     = l
-                | otherwise                                     = (Node (TokError ("No expression found at:" ++ xs)) [], xs)
+                | noError l && noError (isOp2 $ fs l)   = fixOrder (isExp $ fs (isOp2 $ fs l)) --fixOrder
+                | noError l                             = l
+                | otherwise                             = (Branch (TokError ("no expression found at:" ++ xs)) [], xs)
 
 fixOrder :: (Tree a, String) -> (Tree a, String)
-fixOrder (Node x y, s) = (Node x (isMultEx y), s)
+fixOrder (Branch x y, s) = (Branch x (isMultEx y), s)
         where
         isMultEx :: [Tree a] -> [Tree a]
         isMultEx t
                 | length t == 3           = init t ++ [compareOperators (getOp (t !! 1)) (t !! 2)]
                 | length t == 4           = init t ++ [compareOperators (getOp (t !! 2)) (t !! 3)] -- id has field
-                | otherwise               = [Node (TokError ("No operator" ++ show (getOp (t !! 2)))) []]
+                | otherwise               = [Branch (TokError ("no operator" ++ show (getOp (t !! 2)))) []]
                 where
                 compareOperators :: Op2 -> Tree a -> Tree a
-                compareOperators op (Node x y)
-                        | length y == 3 && isBigger (getOp (y !! 1)) op = Node x ([Node (TokParen ParenceO) []] ++ (init y) ++ [(compareOperators (getOp (y !! 1)) (y !! 2))] ++ [Node (TokParen ParenceC) []])
-                        | length y == 3                                 = Node x (init y ++ [(compareOperators (getOp (y !! 1)) (y !! 2))])
-                        | length y == 4 && isBigger (getOp (y !! 2)) op = Node x ([Node (TokParen ParenceO) []] ++ (init y) ++ [(compareOperators (getOp (y !! 2)) (y !! 3))] ++ [Node (TokParen ParenceC) []])
-                        | length y == 4                                 = Node x (init y ++ [(compareOperators (getOp (y !! 2)) (y !! 3))])
-                        | otherwise                                     = Node x y
+                compareOperators op (Branch x y)
+                        | length y == 3 && isBigger (getOp (y !! 1)) op = Branch x ([Branch (TokParen ParenceO) []] ++ (init y) ++ [(compareOperators (getOp (y !! 1)) (y !! 2))] ++ [Branch (TokParen ParenceC) []])
+                        | length y == 3                                 = Branch x (init y ++ [(compareOperators (getOp (y !! 1)) (y !! 2))])
+                        | length y == 4 && isBigger (getOp (y !! 2)) op = Branch x ([Branch (TokParen ParenceO) []] ++ (init y) ++ [(compareOperators (getOp (y !! 2)) (y !! 3))] ++ [Branch (TokParen ParenceC) []])
+                        | length y == 4                                 = Branch x (init y ++ [(compareOperators (getOp (y !! 2)) (y !! 3))])
+                        | otherwise                                     = Branch x y
 
 getOp :: Tree a -> Op2
-getOp (Node (TokOp2 y) _)     = y
-getOp (Node _ _)              =  error "No operator in Exp Op2 Exp"
+getOp (Branch (TokOp2 y) _)     = y
+getOp (Branch _ _)              =  error "geen operator in exp op2 exp"
 
 isBigger :: Op2 -> Op2 -> Bool
 isBigger Times Plus     = True
@@ -254,84 +251,83 @@ isBigger Mod   Minus    = True
 isBigger _     _        = False
 
 isField :: (Tree a, String) -> (Tree a, String)
-isField l@(_, []) = insertTup l (Node (TokField EField) [], [])
+isField l@(_, []) = insertTup l (Branch (TokField EField) [], [])
 isField l@(_, xs)
-        | take 3 (deleteSpace xs) == ".hd"      = insertTup l(isField (Node (TokField (FieldT FieldHD))  [], drop 3 (deleteSpace xs)))
-        | take 3 (deleteSpace xs) == ".tl"      = insertTup l(isField (Node (TokField (FieldT FieldTL))  [], drop 3 (deleteSpace xs)))
-        | take 4 (deleteSpace xs) == ".snd"     = insertTup l(isField (Node (TokField (FieldT FieldSND)) [], drop 4 (deleteSpace xs)))
-        | take 4 (deleteSpace xs) == ".fst"     = insertTup l(isField (Node (TokField (FieldT FieldFST)) [], drop 4 (deleteSpace xs)))
-        | otherwise                             = l
+        | take 3 (ds xs) == ".hd"       = insertTup l(isField (Branch (TokField (FieldT FieldHD))  [], drop 3 (ds xs)))
+        | take 3 (ds xs) == ".tl"       = insertTup l(isField (Branch (TokField (FieldT FieldTL))  [], drop 3 (ds xs)))
+        | take 4 (ds xs) == ".snd"      = insertTup l(isField (Branch (TokField (FieldT FieldSND)) [], drop 4 (ds xs)))
+        | take 4 (ds xs) == ".fst"      = insertTup l(isField (Branch (TokField (FieldT FieldFST)) [], drop 4 (ds xs)))
+        | otherwise                     = l
 
 isFunCall :: (Tree a, String) -> (Tree a, String)
-isFunCall (_, [])        = (Node (TokError "FunCall missing") [], [])
-isFunCall l@(_, xs)      = insertTup l (hasId $ findSpace (isId (Node TokFunCall [], deleteSpace xs)))
+isFunCall (_, [])        = (Branch (TokError "FunCall missing") [], [])
+isFunCall l@(_, xs)      = insertTup l (hasId $ fs (isId (Branch TokFunCall [], ds xs)))
         where
         hasId l@(_,xs)
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == '('      = insertTup l (hasActArgs $ findSpace (dropChar (Node (TokParen ParenceO) [], deleteSpace xs) 1))
-                | noError l                                                                     = (Node (TokError ("(-symbol missing for funCall at:"++xs)) [], [])
-                | otherwise                                                                     = l
+                | noError l && not (null (ds xs)) && head (ds xs) == '('        = insertTup l (hasActArgs $ fs (dropChar (Branch (TokParen ParenceO) [], ds xs) 1))
+                | noError l                                                     = (Branch (TokError ("(-symbol missing for funCall at:"++xs)) [], [])
+                | otherwise                                                     = l
                 where
                 hasActArgs l@(_,xs)
-                        | noError (isActArgs $ findSpace l)                             = hasActArgs $ findSpace (isActArgs $ findSpace l)
-                        | not (null (deleteSpace xs)) && head (deleteSpace xs) == ')'   = insertTup l (dropChar (Node (TokParen ParenceC) [], xs) 1)
-                        | otherwise                                                     = isActArgs $ findSpace l
+                        | noError (isActArgs $ fs l)                    = hasActArgs $ fs (isActArgs $ fs l)
+                        | not (null (ds xs)) && head (ds xs) == ')'     = insertTup l (dropChar (Branch (TokParen ParenceC) [], xs) 1)
+                        | otherwise                                     = isActArgs $ fs l
 
 isActArgs :: (Tree a, String) -> (Tree a, String)
-isActArgs (_, [])       = (Node (TokError "ActArgs missing") [], [])
-isActArgs l@(_, xs)     = insertTup l (hasExp $ findSpace (isExp (Node TokActArgs [], deleteSpace xs)))
+isActArgs (_, [])       = (Branch (TokError "ActArgs missing") [], [])
+isActArgs l@(_, xs)      = insertTup l (hasExp $ fs (isExp (Branch TokActArgs [], ds xs)))
         where
         hasExp l@(_, xs)
-                | noError l && not (null (deleteSpace xs)) && head (deleteSpace xs) == ','      = insertTup l (hasExp $ findSpace (isExp (Node TokActArgs [Node TokComma []], deleteSpace(drop 1 (deleteSpace xs)))))
-                | otherwise                                                                     = l
+                | noError l && not (null (ds xs)) && head (ds xs) == ','        = insertTup l (hasExp $ fs (isExp (Branch TokActArgs [Branch TokComma []], ds(drop 1 (ds xs)))))
+                | otherwise                                                     = l
 
 isOp2 :: (Tree a, String) -> (Tree a, String)
-isOp2 (_, [])                           = (Node (TokError "Op2 missing") [], [])
+isOp2 (_, [])                           = (Branch (TokError "op2 missing") [], [])
 isOp2 l@(_, input)
-      | take 2 (deleteSpace input) == "=="      = insertTup l (Node (TokOp2 Comp)  [], drop 2 (deleteSpace input))
-      | take 2 (deleteSpace input) == "!="      = insertTup l (Node (TokOp2 NEQ)   [], drop 2 (deleteSpace input))
-      | take 2 (deleteSpace input) == "&&"      = insertTup l (Node (TokOp2 AND)   [], drop 2 (deleteSpace input))
-      | take 2 (deleteSpace input) == "||"      = insertTup l (Node (TokOp2 OR)    [], drop 2 (deleteSpace input))
-      | take 2 (deleteSpace input) == "<="      = insertTup l (Node (TokOp2 LEQ)   [], drop 2 (deleteSpace input))
-      | take 2 (deleteSpace input) == ">="      = insertTup l (Node (TokOp2 GEQ)   [], drop 2 (deleteSpace input))
-      | head (deleteSpace input) == '+'         = insertTup l (Node (TokOp2 Plus)  [], tail (deleteSpace input))
-      | head (deleteSpace input) == '-'         = insertTup l (Node (TokOp2 Minus) [], tail (deleteSpace input))
-      | head (deleteSpace input) == '*'         = insertTup l (Node (TokOp2 Times) [], tail (deleteSpace input))
-      | head (deleteSpace input) == '/'         = insertTup l (Node (TokOp2 Div)   [], tail (deleteSpace input))
-      | head (deleteSpace input) == '%'         = insertTup l (Node (TokOp2 Mod)   [], tail (deleteSpace input))
-      | head (deleteSpace input) == '<'         = insertTup l (Node (TokOp2 Lt)    [], tail (deleteSpace input))
-      | head (deleteSpace input) == '>'         = insertTup l (Node (TokOp2 Gt)    [], tail (deleteSpace input))
-      | head (deleteSpace input) == ':'         = insertTup l (Node (TokOp2 Colon) [], tail (deleteSpace input))
-isOp2 _                                         = (Node (TokError "No match Op2") [], [])
+      | take 2 (ds input) == "=="       = insertTup l (Branch (TokOp2 Comp)  [], drop 2 (ds input))
+      | take 2 (ds input) == "!="       = insertTup l (Branch (TokOp2 NEQ)   [], drop 2 (ds input))
+      | take 2 (ds input) == "&&"       = insertTup l (Branch (TokOp2 AND)   [], drop 2 (ds input))
+      | take 2 (ds input) == "||"       = insertTup l (Branch (TokOp2 OR)    [], drop 2 (ds input))
+      | take 2 (ds input) == "<="       = insertTup l (Branch (TokOp2 LEQ)   [], drop 2 (ds input))
+      | take 2 (ds input) == ">="       = insertTup l (Branch (TokOp2 GEQ)   [], drop 2 (ds input))
+      | head (ds input) == '+'          = insertTup l (Branch (TokOp2 Plus)  [], tail (ds input))
+      | head (ds input) == '-'          = insertTup l (Branch (TokOp2 Minus) [], tail (ds input))
+      | head (ds input) == '*'          = insertTup l (Branch (TokOp2 Times) [], tail (ds input))
+      | head (ds input) == '/'          = insertTup l (Branch (TokOp2 Div)   [], tail (ds input))
+      | head (ds input) == '%'          = insertTup l (Branch (TokOp2 Mod)   [], tail (ds input))
+      | head (ds input) == '<'          = insertTup l (Branch (TokOp2 Lt)    [], tail (ds input))
+      | head (ds input) == '>'          = insertTup l (Branch (TokOp2 Gt)    [], tail (ds input))
+      | head (ds input) == ':'          = insertTup l (Branch (TokOp2 Colon) [], tail (ds input))
+isOp2 _                                 = (Branch (TokError "geen match op2") [], [])
 
 isOp1 :: (Tree a, String) -> (Tree a, String)
-isOp1 (_, [])         = (Node (TokError "Op1 missing") [], [])
+isOp1 (_, [])         = (Branch (TokError "op1 missing") [], [])
 isOp1 l@(_, input)
-      | head (deleteSpace input) == '!' = insertTup l (Node (TokOp1 ExclMark) [], tail (deleteSpace input))
-      | head (deleteSpace input) == '-' = insertTup l (Node (TokOp1 PreMinus) [], tail (deleteSpace input))
-      | otherwise                       = (Node (TokError "Incorrect Op1") [], [])
+      | head (ds input) == '!'  = insertTup l (Branch (TokOp1 ExclMark) [], tail (ds input))
+      | head (ds input) == '-'  = insertTup l (Branch (TokOp1 PreMinus) [], tail (ds input))
+      | otherwise               = (Branch (TokError "incorrect op1") [], [])
 
 isInt :: (Tree a, String) -> (Tree a, String)
-isInt (_, []) = (Node (TokError "Integer missing") [], [])
+isInt (_, []) = (Branch (TokError "Integer missing") [], [])
 isInt (x, a : b)
         | a `elem` "1234567890"         = getInt (x, toInt (a : b) 0)
         | otherwise                     = isInt (x, [])
         where
-                getInt (x,(xs,c)) = insertTup (x, xs) (Node (TokInt c) [], xs)
+                getInt (x,(xs,c)) = insertTup (x, xs) (Branch (TokInt c) [], xs)
 
 toInt :: String -> Int -> (String, Int)
-toInt [] _ = ("Error", 0)
+toInt [] _ = ("error", 0)
 toInt l@(a:b) c
         | elem a "1234567890" && not (null b)   = toInt b ((c*10) + digitToInt a)
         | elem a "1234567890" && null b         = ([], (c * 10) + digitToInt a)
         | otherwise                             = (l, c)
 
 isId :: (Tree a, String) -> (Tree a, String)
-isId (_, []) = (Node (TokError "Empty input id") [], [])
+isId (_, []) = (Branch (TokError "empty input id") [], [])
 isId t@(_, l@(x:xs)) | isLetter x         = let (first, rest) = readIdentfier l
-                                              in insertTup t (Node (TokId first) [], deleteSpace rest)
-                    | otherwise          = (Node (TokError ("No id Found at: " ++ xs)) [], [])
+                                              in insertTup t (Branch (TokId first) [], ds rest)
+                    | otherwise          = (Branch (TokError ("no id Found at: " ++ xs)) [], [])
 
-readIdentfier :: [Char] -> ([Char], [Char])
 readIdentfier [] = ([], [])
 readIdentfier l@(x:xs) = let (first, rest) = readLettersOrDigitsOrUnderscores xs
                              identifier = (x:first)
@@ -340,7 +336,6 @@ readIdentfier l@(x:xs) = let (first, rest) = readLettersOrDigitsOrUnderscores xs
 readLettersOrDigitsOrUnderscores :: String -> (String, String)
 readLettersOrDigitsOrUnderscores xs = span isLetterOrDigitOrUnderscore xs
 
-isLetterOrDigitOrUnderscore :: Char -> Bool
 isLetterOrDigitOrUnderscore ch = isLetter ch || isDigit ch || ch == '_'
 
 stripComments :: String -> String
@@ -372,10 +367,10 @@ replaceStr str old new  = loop str
         else head str : loop (tail str)
     n = length old    
 
-findSpace :: (a, String) -> (a, String)
-findSpace (x, []) = (x, [])
-findSpace (x, xs) = (x, deleteSpace xs)
+fs :: (a, String) -> (a, String)
+fs (x, []) = (x, [])
+fs (x, xs) = (x, ds xs)
 
-deleteSpace :: String -> String
-deleteSpace []           = []
-deleteSpace l@(a:b)      =  if a <= ' ' then deleteSpace b else l
+ds :: String -> String
+ds []           = []
+ds l@(a:b)      =  if a <= ' ' then ds b else l
