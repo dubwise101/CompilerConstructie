@@ -63,9 +63,13 @@ data Token      = TokSPL
                 | TokBrack Brack
                 | TokComma
 
-data Tree a      = Branch Token [Tree a] -- | Error [a] String deriving (Show)
+data Tree a      = Node Token [Tree a]
 
-instance Show (Token) where
+instance Show (Token) where        
+    show TokSPL                         = ""
+    show TokDecl                        = ""
+    show TokFunDecl                     = ""
+    show TokVarDecl                     = ""    
     show (TokRetType x)                 = show x
     show (TokType EmptyList)            = "[]"
     show (TokType x)                    = show x
@@ -88,7 +92,6 @@ instance Show (Token) where
     show (TokOp2 Minus)                 = "-"
     show (TokOp2 Times)                 = "*"
     show (TokOp2 Div)                   = "/"
-    show (TokOp2 Mod)                   = "%"
     show (TokOp2 Mod)                   = "%"
     show (TokOp2 Comp)                  = "=="
     show (TokOp2 Lt)                    = "<"
