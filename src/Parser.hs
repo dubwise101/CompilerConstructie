@@ -168,7 +168,7 @@ isType l@(x,xs)
         | head (ds xs) == '('           = insertTup l (hasTypeTup $ fs (isType (dropChar (Branch (TokParen ParenceO) [], ds xs) 1)) )
         | take 3 (ds xs) == "Int"       = insertTup l (Branch (TokType Int) [], ds (drop 3 (ds xs)))
         | take 4 (ds xs) == "Bool"      = insertTup l (Branch (TokType Bool) [], ds (drop 4 (ds xs)))
-        | noError(isId (x, ds xs))      = insertTup l (isId (Branch (TokType Id) [], ds xs))
+        | noError(isId (x, ds xs))      = insertTup l (isId (Branch (TokType (Id "")) [], ds xs))
         | otherwise                     = (Branch (TokError ("no input type found at: " ++ xs)) [], [])
         where
         hasTypeList l@(_, xs)
