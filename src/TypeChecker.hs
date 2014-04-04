@@ -2,7 +2,7 @@ module TypeChecker where
 import Grammar
 
 getGlobalTypes :: Tree a -> [(Type, String)]  --[(RetType, String)]
-getGlobalTypes (Branch TokSPL x)      = findInList x
+getGlobalTypes (Branch TokSPL x)      = checklist ( findInList x)
 getGlobalTypes (Branch TokDecl x)     = findInList x
 getGlobalTypes (Branch TokVarDecl x)  = [getType x]
 getGlobalTypes (Branch TokFunDecl x)  = [getType x] --error ("Error at:" ++ printTree x)
@@ -43,6 +43,18 @@ getTypes x = error ("Error at:" ++ printTree x)
 findInList :: [Tree a] -> [(Type, String)]
 findInList [] = []
 findInList (a:b)= getGlobalTypes a ++ findInList b
+
+checklist :: [(Type, String)] -> [(Type, String)]
+checklist [] = []
+checklist ((a,b):c)
+        | notEqual b c = ((a,b):c)
+        | otherwise = error "er zit een dubbele tussen"
+        where
+        notEqual a [] = True
+        notEqual a ((b,c):d)
+                | a /= c = ((notEqual a d) && (notEqual c d))
+                | otherwise = error ("er zit een dubbele tussen: " ++ a++ " = "++ c)
+
 
 printTree :: [Tree a] -> String
 printTree [] = []
