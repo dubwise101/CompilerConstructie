@@ -63,8 +63,6 @@ data Token      = TokSPL
                 | TokBrack Brack
                 | TokComma
 
-data Tree a      = Branch Token [Tree a] -- | Error [a] String deriving (Show)
-
 instance Show (Token) where
     show (TokRetType x)                 = show x
     show (TokType EmptyList)            = "[]"

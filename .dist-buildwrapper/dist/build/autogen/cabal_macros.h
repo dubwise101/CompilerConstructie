@@ -7,10 +7,10 @@
   (major1) == 4 && (major2) <  6 || \
   (major1) == 4 && (major2) == 6 && (minor) <= 0)
 
-/* package grammar-combinators-0.2.7 */
-#define VERSION_grammar_combinators "0.2.7"
-#define MIN_VERSION_grammar_combinators(major1,major2,minor) (\
+/* package containers-0.5.0.0 */
+#define VERSION_containers "0.5.0.0"
+#define MIN_VERSION_containers(major1,major2,minor) (\
   (major1) <  0 || \
-  (major1) == 0 && (major2) <  2 || \
-  (major1) == 0 && (major2) == 2 && (minor) <= 7)
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 0)
 

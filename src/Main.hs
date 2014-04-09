@@ -3,16 +3,16 @@ module Main where
 import Grammar
 import Parser
 import PrettyPrinter
-import TypeChecker
 
 import System.IO
+import Data.Tree
 
 openFile :: String -> IO ()
 openFile fileName = do
         spl <- readSPL fileName
-        print $ (printGlobalTypes (getGlobalTypes spl))
+        printTreeToFile spl --print $ (printGlobalTypes (getGlobalTypes spl))
 
-readSPL :: String -> IO (Tree a)
+readSPL :: String -> IO (Tree Token)
 readSPL fileName = do
                 text <- readFile fileName
                 return   (isSPL (stripLayout (stripComments text)))
@@ -20,7 +20,7 @@ readSPL fileName = do
                 stripLayout xs = replaceStr (replaceStr xs "\n" " ") "\t" " "
 
 
-printTreeToFile :: Tree a -> IO ()
+printTreeToFile :: Tree Token -> IO ()
 printTreeToFile tree = do
         outh <- System.IO.openFile "prettyprint.txt" WriteMode
         hPutStrLn outh (prettyPrintTree tree)

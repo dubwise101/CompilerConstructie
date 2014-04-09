@@ -5,7 +5,7 @@ data Decl       = VarDecl | FunDecl deriving (Show, Eq)
 data VarDecl    = Eq Type Id Exp deriving (Show, Eq)
 data FunDecl    = Func RetType Id Paren FArgs Curl [VarDecl] Stmt [Stmt] deriving (Show, Eq)
 data RetType    = RType | Void deriving (Show, Eq)
-data Type       = Int|Bool| Tup | EmptyList |Id deriving (Show, Eq)
+data Type       = Int|Bool| EmptyList |Id String | List Type | Tup Type Comma Type | TVoid deriving (Show, Eq)
 data FArgs      = FunArg [(FArgs,Comma)] Type Id deriving (Show, Eq)
 data Stmt       = MultState
                 | IfState
@@ -63,11 +63,11 @@ data Token      = TokSPL
                 | TokBrack Brack
                 | TokComma
 
-data Tree a      = Branch Token [Tree a] -- | Error [a] String deriving (Show)
-
 instance Show (Token) where
     show (TokRetType x)                 = show x
     show (TokType EmptyList)            = "[]"
+    show (TokType (Id a))               = a
+    show (TokType (List a))             = "List "++ show a
     show (TokType x)                    = show x
     show TokFArgs                       = ""
     show (TokStmt Return)               = "return "
