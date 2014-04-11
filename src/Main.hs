@@ -3,6 +3,7 @@ module Main where
 import Grammar
 import Parser
 import PrettyPrinter
+import TypeChecker
 
 import System.IO
 import Data.Tree
@@ -10,7 +11,7 @@ import Data.Tree
 openFile :: String -> IO ()
 openFile fileName = do
         spl <- readSPL fileName
-        printTreeToFile spl --print $ (printGlobalTypes (getGlobalTypes spl))
+        print $ (printTree spl)
 
 readSPL :: String -> IO (Tree Token)
 readSPL fileName = do

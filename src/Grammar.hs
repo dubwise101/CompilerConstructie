@@ -64,26 +64,30 @@ data Token      = TokSPL
                 | TokComma
 
 instance Show (Token) where
+    show (TokSPL)                       = "SPL"
+    show (TokDecl)                      = "Decl"
+    show (TokVarDecl)                   = "TokVarDecl"
+    show (TokFunDecl)                   = "TokFunDecl"
     show (TokRetType x)                 = show x
     show (TokType EmptyList)            = "[]"
     show (TokType (Id a))               = a
     show (TokType (List a))             = "List "++ show a
     show (TokType x)                    = show x
-    show TokFArgs                       = ""
+    show TokFArgs                       = "funarg"
     show (TokStmt Return)               = "return "
     show (TokStmt IfState)              = "if"
     show (TokStmt ElseState)            = "else"
     show (TokStmt WhileState)           = "while"
     show (TokStmt MultState)            = "{"
-    show (TokStmt _)                    = ""
-    show TokExp                          = ""
+    show (TokStmt _)                    = "stmt"
+    show TokExp                          = "exp"
     show (TokField (FieldT FieldHD))    = ".hd"
     show (TokField (FieldT FieldTL))    = ".tl"
     show (TokField (FieldT FieldFST))   = ".fst"
     show (TokField (FieldT FieldSND))   = ".fst"
     show (TokField x)                   = show x
-    show (TokFunCall )                  = ""
-    show (TokActArgs )                  = ""
+    show (TokFunCall )                  = "funcal "
+    show (TokActArgs )                  = "actarg"
     show (TokOp2 Plus)                  = "+"
     show (TokOp2 Minus)                 = "-"
     show (TokOp2 Times)                 = "*"

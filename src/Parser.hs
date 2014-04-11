@@ -23,24 +23,25 @@ insertTup (Node x a, _) (Node y [], s2)                      = (Node x (a ++ [No
 insertTup (Node x a, _) (Node y b, s2)                       = (Node x (a ++ [Node y b]), s2)
 
 insertNode :: Tree Token -> Tree Token -> Tree Token
-insertNode (Node x []) (Node y a)   = Node x [Node y a]
-insertNode (Node x a) (Node y [])   = Node x (a ++ [Node y []])
-insertNode (Node x a) (Node y b)    = Node x (a ++ [Node y b])
+insertNode (Node x []) (Node y a)    = Node x [Node y a]
+insertNode (Node x a)  (Node y [])   = Node x (a ++ [Node y []])
+insertNode (Node x a)  (Node y b)    = Node x (a ++ [Node y b])
 
 isSPL :: String -> Tree Token
 isSPL [] = Node (TokError "empty input file") []
-isSPL input = getDecl (isDecl (Node TokSPL [], input))
+isSPL input = tupleToTree (getDecl (isDecl (Node TokSPL [], input)))
         where
         getDecl l@(t,s)
-                | noError l &&  not (null  (ds s))      = insertNode t (isSPL (ds s))
-                | otherwise                             = tupleToTree (isDecl (Node TokSPL [], input))
+                | noError l &&  not (null(ds s)) =  (getDecl (isDecl $ (fs l)))
+                | noError l                     = l                -- klaar
+                | otherwise                     = l
 
 isDecl :: (Tree Token, String) -> (Tree Token, String)
 isDecl (_, []) = (Node (TokError "No decleration found") [], [])
 isDecl l@(tree, input)
         | noError (isVarDecl l)     = insertTup l (isVarDecl (Node TokDecl [], ds input))
         | noError (isFunDecl l)     = insertTup l (isFunDecl (Node TokDecl [], ds input))
-        | otherwise                 = isVarDecl l
+        | otherwise                 = isFunDecl l
 
 isVarDecl:: (Tree Token, String) -> (Tree Token, String)
 isVarDecl (_, [])       = (Node (TokError "empty input Variable") [], [])
@@ -68,8 +69,8 @@ isFunDecl l@(_,input) = insertTup l (hasId $ fs (isRetType (Node TokFunDecl [], 
                 | noError t = hasParen $ fs (isId $ fs t)
                 | otherwise = t
                 where
-                hasParen l@(_,input)
-                        | not (null input) && head input == '(' = insertTup l (hasFunargs $ fs (dropChar (Node (TokParen ParenceO) [], input) 1))
+                hasParen l@(y,input)
+                        | not (null input) && head input == '(' = (hasFunargs (insertTup l (Node (TokParen ParenceO) [], (drop 1 input))) )
                         | otherwise = (Node (TokError (" ( sign missing in funDecl at: "++ input)) [], input)
                         where
                         hasFunargs l@ (_,input)
